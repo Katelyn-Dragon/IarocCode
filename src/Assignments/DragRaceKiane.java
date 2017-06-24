@@ -38,17 +38,17 @@
 			if(lightBumpReadings[2] > 0 && lightBumpReadings [3] > 0){
 				driveDirect(0, 0);				
 			} else if (lightBumpReadings[4] > 0 || lightBumpReadings [5] > 0){
-				driveDirect(-300, -300);
+				driveDirect(-500, -500);
 				sleep(500);
-				driveDirect(-300,300);
+				driveDirect(-500,500);
 				sleep(150);	
 			} else if (lightBumpReadings[0] > 0 || lightBumpReadings [1] > 0){
-				driveDirect(-300, -300);
+				driveDirect(-500, -500);
 				sleep(500);
-				driveDirect(300,-300);
+				driveDirect(500,-500);
 				sleep(150);	}
 			else {
-				driveDirect(500, 500);
+				driveDirect(800, 800);
 			}
 			
 			return true;
